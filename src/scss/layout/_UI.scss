@@ -7,7 +7,6 @@ body{
 }
 
 .contenedor-estetica{
-    
     @include tablet{
         height: 100vh;
         @include grid(2, $separacion / 2)
@@ -28,4 +27,15 @@ body{
     width: 95%;
     margin: 0 auto;
     padding-top: $separacion / 2;
+
+    .seccion{
+        display: none;
+        margin-top: $separacion;
+        margin-bottom: $separacion / 2;
+    }
+
+}
+
+.mostrar-seccion{
+    display: block !important;
 }
